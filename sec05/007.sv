@@ -36,7 +36,7 @@ module tb;
    #10;
     for(i = 0; i< 15; i++)
       begin
-        a = 5;
+        a = i;
         @(posedge clk);
       end
   end
