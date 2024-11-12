@@ -44,10 +44,10 @@ endsequence
  
  
 sequence sb;
- b[*2];
+ ##1 b[*2];
 endsequence
  
-assert property (@(posedge clk) $rose(start) |=> sa or sb)$info("Suc at %0t",$time);
+ assert property (@(posedge clk) $rose(start) |=> sa and sb)$info("Suc at %0t",$time);
  
  initial begin
  #100;
